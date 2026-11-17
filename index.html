@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leon Template</title>
+  <!-- هاد رابط مكتبة الأيقونات Font Awesome عشان تشتغل  كل الأيقونات ع طول بدون ما احملها -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Start Header -->
+   <header>
+    <div class="container">
+      <!-- صورة اللوجو وعطيناها id عشان رح تتكرر مرة وحدة بس في الموقع كله -->
+      <img id="logo" src="images/logo.png" alt="Logo" width="200px">
+      <!-- أيقونة القائمة المنسدلة جبناها من موقع Font Awesome -->
+      <i class="fa-solid fa-list"></i>
+      <!-- قائمة الروابط، واستخدمنا علامة السلم # عشان لما تضغط ع الرابط ينزلك ع القسم نفسه id في الصفحة -->
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- Start Landing -->
+  <div class="landing">
+    <!-- ما حطينا صورة هان بوسم img لأنه رح نضيفها كخلفية (background-image) من ملف الـ CSS -->
+    <div class="intro">
+      <h1>Hello There</h1>
+      <!-- كلمة lorem بتولدلك نص عشوائي تجريبي بدل ما تقعد تكتب كلام من عندك -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    </div>
+  </div>
+  <!-- End Landing -->
+
+
+  <!-- Start Features -->
+  <!-- عطيناه id="features" عشان لما نضغط ع رابط فوق في الهيدر ينقلنا لهان مباشرة -->
+  <div id="features">
+    <div class="container">
+      <!-- كررنا ديف الـ feat ثلاث مرات وعطيناهم نفس الكلاس لأنهم رح ياخدوا نفس التنسيق بالزبط في الـ CSS -->
+      <div class="feat">
+        <!-- أيقونة العصا السحرية -->
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Feature</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      </div>
+      <div class="feat">
+        <!-- أيقونة الألماسة -->
+        <i class="fa-regular fa-gem"></i>
+        <h3>Feature</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      </div>
+      <div class="feat">
+        <!-- أيقونة الكرة الأرضية -->
+        <i class="fa-solid fa-earth-asia"></i>
+        <h3>Feature</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+
+  <!-- Start Services -->
+   <div id="services">
+    <div class="container">
+      <!-- عطيناه كلاس special-heading لأنه عنوان مميز ورح نكرر نفس تصميمه في باقي الأقسام -->
+      <h2 class="special-heading">Services</h2>
+      <p>Don't be busy, be productive</p>
+      
+      <!-- حاوية داخلية قسمناها لـ 3 أعمدة (col) عشان نرتبهم جنب بعض بسهولة لما نستخدم الـ Grid في الـ CSS -->
+      <div class="inner-container">
+        
+         <!-- Start Col 1 -->
+         <!-- العمود الأول: فيه خدمتين تحت بعض -->
+
+        <div class="col">
+          <div class="serv">
+            <i class="fa-solid fa-pencil"></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          </div>
+          <div class="serv">
+            <i class="fa-solid fa-sliders"></i>
+            <h3>UI & UX</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          </div>
+        </div>
+        <!-- End Col 1 -->
+
+        <!-- Start Col 2 -->
+        <!-- العمود الثاني: برضو فيه خدمتين تحت بعض -->
+        <div class="col">
+          <div class="serv">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          </div>
+          <div class="serv">
+            <i class="fa-solid fa-link"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          </div>
+        </div>
+        <!-- End Col 2 -->
+
+        <!-- Start Col 3 -->
+        <!-- العمود الثالث: فيه صورة، وعطيناها عرض مبدئي 250px عشان حجمها الأصلي كبير كتير -->
+        <div class="col">
+          <div class="serv">
+            <img src="images/temp1.jpg" width="250px" alt="Services Image">
+          </div>
+        </div>
+        <!-- End Col 3 -->
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+  <!-- Start Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <!-- نفس العنوان المميز تبع القسم اللي قبله -->
+      <h2 class="special-heading">Portfolio</h2>
+      <p>If you do it right, it will last forever.</p>
+      
+      <!-- بتضم 3 مشاريع، كل مشروع عبارة عن ديف فيه صورة وعنوان ووصف -->
+      <div class="inner-container">
+        <div class="port-project">
+          <img src="images/Project1.jpg" width="200px" alt="Project 1">
+          <h4>Project 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+        <div class="port-project">
+          <img src="images/Project2.jpg" width="200px" alt="Project 2">
+          <h4>Project 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+        <div class="port-project">
+          <img src="images/Project3.jpg" width="200px" alt="Project 3">
+          <h4>Project 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End Portfolio -->
+
+  <!-- Start About -->
+  <div id="about">
+    <div class="container">
+      <h2 class="special-heading">About</h2>
+      <p>Less is more work</p>
+      
+      <!-- محتوى القسم مقسوم لجزئين: جزء للصورة وجزء للنصوص -->
+      <div class="about-content">
+        <!-- الجزء الأول: الصورة -->
+        <div class="about-img">
+          <img src="images/temp2.jpg" width="200px" alt="About Image">
+        </div>
+        <!-- الجزء الثاني: فقرتين نص وبينهم وسم hr اللي بيعمل خط فاصل بالعرض -->
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit placeat quos exercitationem vitae tempora illo quam iste numquam quo reprehenderit voluptates nobis blanditiis, impedit perspiciatis nemo voluptate maxime, aperiam tenetur?</p>
+          <hr>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+
+
+  <!-- Start Contact -->
+  <div id="contact">
+    <div class="container">
+      <h2 class="special-heading">Contact</h2>
+      <p>We are born to create</p>
+      <h3>Feel free to drop us a line at:</h3>
+      <!-- رابط الإيميل ولازم نحطله href عشان المتصفح يتعامل معه كرابط ويطلع عليه علامة اليد -->
+      <a href="mailto:sparklagency@gmail.com">sparklagency@gmail.com</a>
+      
+      <div class="social">
+        <!-- استخدمنا span بدل p لأنها عنصر inline فبتخلي أيقونات السوشيال ميديا تيجي جنب النص ع نفس السطر مش تحته -->
+        <span>Contact us</span>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact -->
+
+</body>
+</html>
